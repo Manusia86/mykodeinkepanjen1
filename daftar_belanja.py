@@ -8,12 +8,15 @@ while True:
         break
     belanja.append(a)
 
-p = input('masukkan item yang ingin di hapus: ')
-if p in belanja:
-    belanja.remove(p)
-    print('item berhasil dihapus')
-else:
-    print('item tidak ada di daftar belanja')
+while True:
+    p = input('masukkan item yang ingin di hapus: (ketik "stop" untuk berhenti)')
+    if p in belanja:
+        belanja.remove(p)
+        print('item berhasil dihapus')
+    if p.lower() == 'stop':
+      break
+    else:
+        print('item tidak ada di daftar belanja')
 
     
 
