@@ -72,7 +72,13 @@ while True:
     result = []
     for i in range(x):
       row = []
-      for j in range(y);
+      for j in range(y):
+        total = a[i][j]
+        row.append(total)
+      result.append(row)
+
+    for v in result:
+      print(v)
       
   elif n == 'n':
     break
